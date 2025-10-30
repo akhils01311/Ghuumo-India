@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Login SignUp Page</title>
+<style>
+    body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+#container {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#signUpBox, #logInBox {
+  width: 300px;
+  margin: 20px auto;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body> 
+	<div id="container">
+		<div id="signUpBox">
+			<h2>SignUp</h2>
+            <input type="text" id="newName" placeholder="Enter Your Name"><br><br>
+			<input type="type" id="newUser" placeholder="New Username:"><br><br>
+			<input type="password" id="newPassword" placeholder="Create Password:"><br><br>
+			<button id="btn" onclick="register()">SignUp</button>
+				<p>I have already account ! <a href="#" onclick="switchToLogin()">Login</a></p>
+		</div>
+		<div id="logInBox" style="display:none;">
+			<h2>LogIn</h2>
+			<input type="type" id="userName" placeholder="Enter Username"><br><br>
+			<input type="password" id="passWord" placeholder="Enter Password:"><br><br>
+			<button id="btn" onclick="login()">LogIn</button>
+				<p>I didn't have account ! <a href="#" onclick="switchToSignUp()">SignUp</a></p>
+		</div>
+		<p id="message"></p>
+	</div>
+
+<script scr="login.js"></script>
+</script>
+</body>

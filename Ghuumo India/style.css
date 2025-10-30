@@ -1,0 +1,228 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 1500px;
+    }
+
+       #hotel-ad-top-left {
+        display: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      color: white;
+      font-size: 1.2rem;
+      font-family: Arial, sans-serif;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #hotel-ad-top-left:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+
+    #freeGuide a{
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    #freeGuide a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    header {
+      background: azure;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: relative; 
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .mobile-view {
+      display: none;
+      cursor: pointer;
+      font-size: 28px;
+    }
+
+    .logo img {
+      height: 100px;
+      width: auto;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+ .image-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+    .image-container img {
+      max-width: 100%;
+      margin: 0;
+      height: auto;
+    }
+
+    .link-image {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .link-image img {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      object-fit: cover;
+    }
+
+    .link-image img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
+    /* Style for the back to top button */
+#backToTopBtn {
+  display: none; /* Hidden by default */
+  width:50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 100; /* Above other content */
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #555;
+}
+  
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+   
+
+    @media (max-width: 768px) {
+      
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: azure;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+      }
+
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .mobile-view {
+        display: block;
+      }
+
+      .list {
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+      .list a {
+        display: block;
+        width: 100%;
+      }
+
+      .image-container {
+        flex-direction: column;
+        height: auto;
+      }
+      .image-container img {
+        max-width: 90%;
+        height: auto;
+      }
+
+         select{
+      font-size: 15px;
+      padding: 0px 20px;
+      border: 0px;
+      cursor: pointer;
+        }
+  
+
+      .link-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .link-image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 10px;
+      }
+
+      #hotel-ad-top-left{
+        display: none !important;
+      }
+    }
+    

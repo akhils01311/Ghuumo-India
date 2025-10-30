@@ -1,0 +1,102 @@
+ /* Chat Icon */
+    #chat-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #007BFF;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      transition: background-color 0.3s ease;
+    }
+
+    #chat-icon:hover {
+      background-color: #0056b3;
+    }
+
+    /* Chat Window */
+    #chat-box {
+      position: fixed;
+      bottom: 90px;
+      left: 20px;
+      width: 280px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .chat-header {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    /* Messages Area */
+    .chat-messages {
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .chat-messages .bot, .chat-messages .user {
+      margin: 8px 0;
+      padding: 8px 10px;
+      border-radius: 10px;
+      max-width: 80%;
+      display: inline-block;
+    }
+
+    .chat-messages .bot {
+      background-color: #f1f1f1;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    .chat-messages .user {
+      background-color: #DCF8C6;
+      color: #000;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    /* Input Area */
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      font-size: 14px;
+    }
+
+    .chat-input button {
+      padding: 10px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    .chat-input button:hover {
+      background-color: #0056b3;
+    }
